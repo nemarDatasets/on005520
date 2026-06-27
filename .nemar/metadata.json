@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Research data supporting 'EEG recording during playing MOBA game'",
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 23 participants during resting state (eyes closed and open) and active gameplay in a multiplayer online battle arena (MOBA) game. The study captures neural activity associated with gaming performance, including event markers for in-game actions such as kills, deaths, and match outcomes. Data were collected between April and July 2023 using a 64-channel Neuroscan system.",
+  "methods_description": "EEG data were acquired using a Neuroscan system with 64 electrodes at a sampling frequency of 1000 Hz. Recordings included resting state conditions (eyes closed and eyes open) and continuous EEG during MOBA gameplay. Event markers were coded to identify specific in-game events: kills (13), deaths (14), game start (66), game failure (444), and game victory (666).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,29 @@
     "Dong-Dong Zhou": {},
     "Li Kuang": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005520.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Event-related potentials"
+    },
+    {
+      "term": "MOBA game"
+    },
+    {
+      "term": "Gaming"
+    },
+    {
+      "term": "Resting state"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005520",
       "identifier_type": "URL",
@@ -34,6 +53,11 @@
       "identifier": "10.18112/openneuro.ds005520",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005520.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -46,12 +70,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "296.3 GB (439 files)"
   ],
   "formats": [
     ".avi",
@@ -67,38 +91,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 23 participants during resting state (eyes closed and open) and active gameplay in a multiplayer online battle arena (MOBA) game. EEG signals were acquired using a 64-electrode Neuroscan system at 1000 Hz sampling rate, with event markers corresponding to in-game actions (kills, deaths, game start, failure, and victory). The dataset supports investigation of neural correlates of competitive gaming and real-time cognitive engagement.",
-  "methods_description": "EEG data were collected using a Neuroscan system with 64 electrodes at a sampling frequency of 1000 Hz. Recordings included resting-state conditions (eyes closed and eyes open) and continuous EEG during MOBA gameplay. Event markers were coded to identify specific in-game events: kills (13), deaths (14), game start (66), game failure (444), and game victory (666). Data collection occurred between April 2023 and July 2023.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Event-Related Potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
-    },
-    {
-      "term": "MOBA game"
-    },
-    {
-      "term": "gaming"
-    },
-    {
-      "term": "cognitive engagement"
-    },
-    {
-      "term": "resting-state"
-    }
-  ],
-  "source_hash": "196109f9ef4bce1b45c83299e9ac5509be33b3c00043efc4d6142dca4f9779db"
+  "source_hash": "e61eec403897d0c33b6ec0a277e3214b1d3d16617da774c804efa301905d9a1c"
 }
