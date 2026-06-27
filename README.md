@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005520-blue)](https://doi.org/10.82901/nemar.on005520)
+
 #  General information
 
 This dataset contains resting(eyes closed, eyes open) and EEG recordings during playing real MOBA game with 23 participants.
