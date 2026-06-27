@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005520",
-  "source": "openneuro",
-  "source_id": "ds005520",
+  "pipeline_stage": "enriched",
   "title": "Research data supporting 'EEG recording during playing MOBA game'",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Hong-Zhi Li": {},
     "Jia-Jia Yang": {},
@@ -14,26 +14,91 @@
     "Dong-Dong Zhou": {},
     "Li Kuang": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005520.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005520",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005520",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005520",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
       "funder_name": "This work was supported by a grant from the Chongqing Medical Youth Top Talent Project in Chongqing Municipal Health Commission (DDZ)."
+    },
+    {
+      "funder_name": "Chongqing Municipal Health Commission",
+      "award_title": "Chongqing Medical Youth Top Talent Project"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".avi",
+    ".csv",
+    ".eeg",
+    ".fdt",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 23 participants during resting state (eyes closed and open) and active gameplay in a multiplayer online battle arena (MOBA) game. EEG signals were acquired using a 64-electrode Neuroscan system at 1000 Hz sampling rate, with event markers corresponding to in-game actions (kills, deaths, game start, failure, and victory). The dataset supports investigation of neural correlates of competitive gaming and real-time cognitive engagement.",
+  "methods_description": "EEG data were collected using a Neuroscan system with 64 electrodes at a sampling frequency of 1000 Hz. Recordings included resting-state conditions (eyes closed and eyes open) and continuous EEG during MOBA gameplay. Event markers were coded to identify specific in-game events: kills (13), deaths (14), game start (66), game failure (444), and game victory (666). Data collection occurred between April 2023 and July 2023.",
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Event-Related Potentials",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
+    },
+    {
+      "term": "MOBA game"
+    },
+    {
+      "term": "gaming"
+    },
+    {
+      "term": "cognitive engagement"
+    },
+    {
+      "term": "resting-state"
+    }
+  ],
+  "source_hash": "196109f9ef4bce1b45c83299e9ac5509be33b3c00043efc4d6142dca4f9779db"
 }
